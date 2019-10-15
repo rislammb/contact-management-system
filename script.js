@@ -3,8 +3,9 @@ let cmsTable;
 
 const enableDisableNameInput = option => {
   const newPersonName = document.getElementById('newPersonName');
-  if (option === 'enable') newPersonName.disabled = false;
-  else if (option === 'disable') newPersonName.disabled = true;
+  if (option === 'enable') {
+    newPersonName.disabled = false;
+  } else if (option === 'disable') newPersonName.disabled = true;
 };
 
 const refreshDOMTable = () => {
@@ -166,11 +167,5 @@ const deleteUserFromTable = userName => {
   localStorage.setItem(tableKey, JSON.stringify(cmsTable));
   refreshDOMTable();
 };
-
-const clearStorageBtn = document.getElementById('clearBtn');
-clearStorageBtn.addEventListener('click', () => {
-  localStorage.removeItem(tableKey);
-  refreshDOMTable();
-});
 
 refreshDOMTable();

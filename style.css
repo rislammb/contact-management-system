@@ -17,7 +17,7 @@ body {
 h1 {
   text-align: center;
   margin: 7px 0;
-  font-size: 30px;
+  font-size: 20px;
   text-shadow: 2px 3px 3px rgb(75, 75, 75);
 }
 .cms-table-container {
@@ -121,7 +121,7 @@ i {
 @media screen and (min-width: 550px) {
   h1 {
     margin: 10px 0;
-    font-size: 38px;
+    font-size: 35px;
   }
   .cms-table-container {
     font-size: 16px;
