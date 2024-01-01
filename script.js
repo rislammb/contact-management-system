@@ -45,12 +45,12 @@ const refreshDOMTable = () => {
 
     const currentEditBtn = document.createElement('div');
     currentEditBtn.className = 'cms-table-column cms-edit';
-    currentEditBtn.innerHTML = '<i class="fas fa-edit"></i>';
+    currentEditBtn.innerHTML = '<img src="./pen.png" alt="edit" width="24" />';
     currentRow.appendChild(currentEditBtn);
 
     const currentDeleteBtn = document.createElement('div');
     currentDeleteBtn.className = 'cms-table-column cms-delete';
-    currentDeleteBtn.innerHTML = '<i class="fas fa-trash-alt"></i>';
+    currentDeleteBtn.innerHTML = '<i class="img src="./trash-bin.png" alt="delete" width="24" />';
     currentRow.appendChild(currentDeleteBtn);
 
     newTableBody.appendChild(currentRow);
